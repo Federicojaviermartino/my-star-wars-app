@@ -1,13 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
+import { Planet } from '../interfaces/planet';
 
-interface Planet {
-  name: string;
-  climate: string;
-  diameter: string;
-  population: string;
-}
 
 const PlanetDetails: React.FC = () => {
   const { planetId } = useParams<{ planetId: string }>();
